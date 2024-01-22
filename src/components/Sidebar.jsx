@@ -3,6 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { BsTwitterX } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import ContectMe from './ContectMe';
 
 const Sidebar = () => {
     const sidebarOptions = [
@@ -39,7 +40,7 @@ const Sidebar = () => {
     ]
     return (
         <>
-            <div className='bg-[#1C1B23] flex pb-20 rounded-lg flex-col p-4'>
+            <div className='bg-[#1C1B23] flex pb-20 rounded-lg w-60 h-screen md:h-fit flex-col p-5'>
                 <h3 className='text-slate-400 font-bold text-xl mb-10'>Socials</h3>
                 {sidebarOptions.map((option) => (
                     <Link to={option.linkto}>
@@ -52,6 +53,9 @@ const Sidebar = () => {
                         </p>
                     </Link>
                 ))}
+                <div className='flex md:hidden my-5'>
+                    <ContectMe />
+                </div>
             </div>
         </>
     )
