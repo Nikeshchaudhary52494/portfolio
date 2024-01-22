@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectCart from './ProjectCart'
+import ProjectCart from './cards/ProjectCart'
 
 const Projects = ({ title, data }) => {
     return (

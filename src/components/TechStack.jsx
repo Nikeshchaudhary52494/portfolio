@@ -3,11 +3,11 @@ import TechCard from './cards/TechCard';
 
 const TechStack = () => {
     return (
-        <div className="col-span-2 py-6 md:col-span-2 lg:col-span-3">
-            <div className="text-xl font-medium mt-2 text-zinc-200 mb-5">
+        <div className="col-span-2 py-6 mt-10 md:col-span-2 lg:col-span-3">
+            <div className="text-xl pl-2 font-medium mt-2 text-zinc-200 mb-5">
                 What I know
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-5">
                 <TechCard
                     title="Frontend"
                     classaName="text-[#4f91f2]"
@@ -19,6 +19,7 @@ const TechStack = () => {
                         'Typescript',
                         'React Js',
                         'Next Js 13',
+                        'Flutter'
                     ]}
                 />
                 <TechCard
@@ -39,10 +40,24 @@ const TechStack = () => {
                     ]}
                 />
                 <TechCard
-                    title="Misc"
+                    title="Programing Language"
+                    classaName="text-cyan-500"
+                    tech={[
+                        'Java',
+                        'C',
+                        'Dart',
+                        'Python',
+                        'Javascript'
+                    ]}
+                />
+                <TechCard
+                    title="miscellaneous"
                     classaName="text-[#10c0a2]"
                     tech={[
                         'GIT',
+                        'GitHub',
+                        'Postman',
+                        'VsCode',
                         'Vercel',
                         'Render',
                     ]}

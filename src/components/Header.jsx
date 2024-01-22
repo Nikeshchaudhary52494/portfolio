@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import myPic from "../assets/blackpic.jpg"
-import { Cross, MenuIcon, X } from 'lucide-react'
+import { MenuIcon, X } from 'lucide-react'
 import Sidebar from './Sidebar'
+import { Link } from 'react-router-dom'
 const Header = () => {
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -9,6 +10,11 @@ const Header = () => {
     const handleToggle = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
+    const resumePath = '../../public/resume.pdf';
+
+    const handelResumeDonwnload = () => {
+
+    }
 
     useEffect(() => {
         const handleScroll = (event) => {
@@ -43,12 +49,10 @@ const Header = () => {
                 </div>
 
                 <div
-                    className={`w-screen md:hidden -top-4 absolute -left-10 transition-transform bg-black backdrop-filter bg-opacity-50 backdrop-blur-md transform ${isSidebarOpen ? 'translate-x-10' : '-translate-x-full'
-                        }`}
-                >
+                    className={`w-screen md:hidden z-10 -top-4 absolute -left-10 transition-transform bg-black backdrop-filter bg-opacity-50 backdrop-blur-md transform ${isSidebarOpen ? 'translate-x-10' : '-translate-x-full'}`}>
                     <X
                         onClick={handleToggle}
-                        className='absolute top-5 left-52 text-white' />
+                        className='absolute top-5 cursor-pointer left-52 text-white' />
                     <Sidebar />
                 </div>
 
@@ -61,11 +65,15 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-white text-center font-bold xs:text-2xl'>I'm Nikesh Chaudhary</h1>
-                    <p className='text-white text-center text-xs'>a full stack software developer from india</p>
+                    <p className='text-white text-center text-xs'>A full-stack software developer from india</p>
                 </div>
                 <div className='flex-grow'></div>
                 <div>
-                    <button className='bg-blue-400 px-4 text-white py-2 rounded-lg'>Download resume</button>
+                    <a href={resumePath} download="resume.pdf">
+                        <button className='bg-blue-400 p-2 rounded-lg text-white'>
+                            Download Resume
+                        </button>
+                    </a>
                 </div>
             </div>
         </>

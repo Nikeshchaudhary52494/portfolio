@@ -1,5 +1,3 @@
-import React from 'react'
-import pic from "../assets/byte.png"
 import { Link } from 'react-router-dom'
 
 const ProjectCart = ({
@@ -9,7 +7,6 @@ const ProjectCart = ({
     color,
     techStack,
 }) => {
-    console.log(color)
 
     return (
         <Link to={href}>
@@ -21,7 +18,7 @@ const ProjectCart = ({
                             alt={title}
                             className="aspect-video object-cover"
                         />
-                        <div className={`absolute flex justify-center items-center text-white font-bold text-3xl top-0 left-0 w-full h-full ${color} bg-opacity-50`}>{title}</div>
+                        <div className={`absolute flex justify-center text-center items-center text-white font-bold text-3xl top-0 left-0 w-full h-full ${color} bg-opacity-50`}>{title}</div>
                     </div>
                     <div className="flex flex-col px-4 py-2 h-24">
                         <div className="flex font-bold">Tech used:</div>

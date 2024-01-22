@@ -1,6 +1,6 @@
 import byte from "../assets/byte.png"
 import snakegame from "../assets/snakegame.png"
-import oldportfilio from "../assets/oldportfilio.png"
+import oldportfolio from "../assets/oldportfolio.png"
 import taskmanagement from "../assets/taskmanagement.jpg"
 import foodapp from "../assets/foodapp.png"
 
@@ -42,9 +42,9 @@ export const projectCard = [
     {
         id: 5,
         color: "bg-pink-500",
-        title: 'Old Portfilio',
+        title: 'Old Portfolio',
         techStack: 'Javascript, Html, Tailwind css',
-        imageUrl: oldportfilio,
+        imageUrl: oldportfolio,
         href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
     },
 ];
