@@ -1,32 +1,50 @@
+import byte from "../assets/byte.png"
+import snakegame from "../assets/snakegame.png"
+import oldportfilio from "../assets/oldportfilio.png"
+import taskmanagement from "../assets/taskmanagement.jpg"
+import foodapp from "../assets/foodapp.png"
+
 export const projectCard = [
     {
         id: 1,
-        title: 'Discord Clone',
-        techStack: 'Next.js 13, React Hook Form, Zustand, Shadcn, Typescript',
-        imageUrl: 'discord-clone.jpeg',
-        href: 'https://github.com/nwaliaez/discord-clone',
+        color: "bg-cyan-500",
+        title: 'Byte Ecommerce',
+        techStack: 'React, Express, Mongodb, Tailwind css, Redux toolkit',
+        imageUrl: byte,
+        href: 'https://byte-ecommerce.vercel.app/',
     },
     {
         id: 2,
-        title: 'Spotify Clone',
+        color: "bg-green-500",
+        title: 'Snake Game',
         techStack:
-            'Next.js 13, React Hook Form, Zustand, Radix UI, Typescript, Tailwind CSS',
-        imageUrl: 'spotify-clone.gif',
-        href: 'https://github.com/nwaliaez/spotify-clone',
+            'Tailwind css, Javascript, Html',
+        imageUrl: snakegame,
+        href: 'https://snake-game-box.vercel.app/',
     },
     {
         id: 3,
-        title: 'Amazon Clone',
+        color: "bg-red-500",
+        title: 'Task Management Application',
         techStack:
-            'NodeJs, Express, Mongoose, Next.js 13, Next Auth, React Hook Form, Typescript, Tailwind CSS',
-        imageUrl: 'amazon-clone.jpeg',
-        href: 'https://github.com/nwaliaez/eCommerce',
+            'Mongodb, Express, Javascript ',
+        imageUrl: taskmanagement,
+        href: 'https://github.com/Nikeshchaudhary52494/task_management_application.git',
     },
     {
         id: 4,
-        title: ' DALL·E Clone',
-        techStack: 'OpenAI, Nodejs, Express, Mongoose, ReactJS, Tailwind CSS',
-        imageUrl: 'dalle-clone.webp',
-        href: 'https://github.com/nwaliaez/dalleClone',
+        color: "bg-blue-500",
+        title: 'Flutter Food App',
+        techStack: 'Flutter, Dart',
+        imageUrl: foodapp,
+        href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
+    },
+    {
+        id: 5,
+        color: "bg-pink-500",
+        title: 'Old Portfilio',
+        techStack: 'Javascript, Html, Tailwind css',
+        imageUrl: oldportfilio,
+        href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
     },
 ];

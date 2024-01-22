@@ -13,6 +13,7 @@ const Projects = ({ title, data }) => {
                             key={card.id}
                             title={card.title}
                             src={card.imageUrl}
+                            color={card.color}
                             techStack={card.techStack}
                         />
                     ))}

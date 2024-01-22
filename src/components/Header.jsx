@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
 
                 <div
-                    className={`w-full md:hidden -top-4 absolute -left-10 transition-transform bg-black backdrop-filter bg-opacity-50 backdrop-blur-md transform ${isSidebarOpen ? 'translate-x-10' : '-translate-x-full'
+                    className={`w-screen md:hidden -top-4 absolute -left-10 transition-transform bg-black backdrop-filter bg-opacity-50 backdrop-blur-md transform ${isSidebarOpen ? 'translate-x-10' : '-translate-x-full'
                         }`}
                 >
                     <X
