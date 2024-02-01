@@ -16,7 +16,7 @@ const ProjectCart = ({
                         <img
                             src={src}
                             alt={title}
-                            className="aspect-video object-cover"
+                            className="h-full w-full aspect-video object-cover "
                         />
                         <div className={`absolute flex justify-center text-center items-center text-white font-bold text-3xl top-0 left-0 w-full h-full ${color} bg-opacity-50`}>{title}</div>
                     </div>

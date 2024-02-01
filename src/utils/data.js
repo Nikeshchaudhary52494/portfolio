@@ -3,6 +3,7 @@ import snakegame from "../assets/snakegame.png"
 import oldportfolio from "../assets/oldportfolio.png"
 import taskmanagement from "../assets/taskmanagement.jpg"
 import foodapp from "../assets/foodapp.png"
+import fetchme from "../assets/fetchme.png"
 
 export const projectCard = [
     {
@@ -15,6 +16,15 @@ export const projectCard = [
     },
     {
         id: 2,
+        color: "bg-blue-500",
+        title: 'Fetchme',
+        techStack:
+            'Flutter, Dart, Tensorflow',
+        imageUrl: fetchme,
+        href: 'https://github.com/Nikeshchaudhary52494/fetchme.git',
+    },
+    {
+        id: 3,
         color: "bg-green-500",
         title: 'Snake Game',
         techStack:
@@ -23,7 +33,7 @@ export const projectCard = [
         href: 'https://snake-game-box.vercel.app/',
     },
     {
-        id: 3,
+        id: 4,
         color: "bg-red-500",
         title: 'Task Management Application',
         techStack:
@@ -32,7 +42,7 @@ export const projectCard = [
         href: 'https://github.com/Nikeshchaudhary52494/task_management_application.git',
     },
     {
-        id: 4,
+        id: 5,
         color: "bg-blue-500",
         title: 'Flutter Food App',
         techStack: 'Flutter, Dart',
@@ -40,11 +50,11 @@ export const projectCard = [
         href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
     },
     {
-        id: 5,
+        id: 6,
         color: "bg-pink-500",
         title: 'Old Portfolio',
         techStack: 'Javascript, Html, Tailwind css',
         imageUrl: oldportfolio,
-        href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
+        href: 'https://nikeshportfolio52494.web.app',
     },
 ];

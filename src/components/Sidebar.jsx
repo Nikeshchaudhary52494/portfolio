@@ -40,7 +40,7 @@ const Sidebar = () => {
     ]
     return (
         <>
-            <div className='bg-[#1C1B23] flex pb-20 rounded-lg w-60 h-screen md:h-fit flex-col p-5'>
+            <div className='bg-[#1C1B23] flex pb-20 rounded-lg w-60 h-full md:h-fit flex-col p-5'>
                 <h3 className='text-slate-400 font-bold text-xl mb-10'>Socials</h3>
                 {sidebarOptions.map((option) => (
                     <Link to={option.linkto}>

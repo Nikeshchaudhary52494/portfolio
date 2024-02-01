@@ -11,7 +11,7 @@ const Layout = () => {
                     <ContectMe />
                 </div>
                 <div className="flex w-full">
-                    <div className='px-2 hidden md:block'>
+                    <div className='px-2 h-screen overflow-y-scroll pb-20 custom-scrollbar hidden md:block'>
                         <Sidebar />
                     </div>
                     <div className="flex-1 h-screen pb-20 md:pt-0 pt-5 overflow-y-scroll px-4 custom-scrollbar">
