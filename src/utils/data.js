@@ -4,6 +4,7 @@ import oldportfolio from "../assets/oldportfolio.png"
 import taskmanagement from "../assets/taskmanagement.jpg"
 import foodapp from "../assets/foodapp.png"
 import fetchme from "../assets/fetchme.png"
+import netflix from "../assets/netflix.png"
 
 export const projectCard = [
     {
@@ -51,6 +52,14 @@ export const projectCard = [
     },
     {
         id: 6,
+        color: "bg-green-700",
+        title: 'Next Netflix-clone',
+        techStack: 'Next,Tailwind css, Prisma, Supabase',
+        imageUrl: netflix,
+        href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
+    },
+    {
+        id: 7,
         color: "bg-pink-500",
         title: 'Old Portfolio',
         techStack: 'Javascript, Html, Tailwind css',
