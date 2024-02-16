@@ -9,8 +9,6 @@ const Header = () => {
     const handleToggle = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-    const resumePath = '/resume.pdf';
-
     useEffect(() => {
         const handleScroll = (event) => {
             if (isSidebarOpen) {
@@ -73,7 +71,7 @@ const Header = () => {
                 </div>
                 <div className='flex-grow'></div>
                 <div>
-                    <a href={resumePath} download="resume.pdf">
+                    <a href='/nikeshresume.pdf' download="nikeshresume.pdf">
                         <button className='bg-blue-400 p-2 rounded-lg text-white'>
                             Download Resume
                         </button>
