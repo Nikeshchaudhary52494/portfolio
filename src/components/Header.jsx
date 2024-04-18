@@ -71,7 +71,7 @@ const Header = () => {
                 </div>
                 <div className='flex-grow'></div>
                 <div>
-                    <a href='/nikeshresume.pdf' download="nikeshresume.pdf">
+                    <a href='/nikeshResume.pdf' download="nikeshResume.pdf">
                         <button className='bg-blue-400 p-2 rounded-lg text-white'>
                             Download Resume
                         </button>
