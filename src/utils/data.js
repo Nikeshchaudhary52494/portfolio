@@ -2,10 +2,10 @@ import byte from "../assets/byte.png"
 // import snakegame from "../assets/snakegame.png"
 // import oldportfolio from "../assets/oldportfolio.png"
 // import taskmanagement from "../assets/taskmanagement.jpg"
-import foodapp from "../assets/foodapp.png"
+// import foodapp from "../assets/foodapp.png"
 // import fetchme from "../assets/fetchme.png"
 import netflix from "../assets/netflix.png"
-import buzzHive from "../assets/buzzHive.png"
+import buzzHive from "../assets/buzzhive.png"
 import spotify from "../assets/spotify.png"
 
 export const projectCard = [
@@ -42,14 +42,7 @@ export const projectCard = [
         imageUrl: netflix,
         href: 'https://netflixclone-next.vercel.app/',
     },
-    {
-        id: 5,
-        color: "bg-blue-500",
-        title: 'Flutter Food App',
-        techStack: 'Flutter, Dart',
-        imageUrl: foodapp,
-        href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
-    },
+
 ];
 
 export const ExtraProjectsData = [
@@ -83,5 +76,12 @@ export const ExtraProjectsData = [
         techStack:
             'React, Firebase, Tailwind CSS',
         href: 'https://tic-tac-toe-game-box.vercel.app/',
+    },
+    {
+        id: 5,
+        color: "bg-blue-500",
+        title: 'Flutter Food App',
+        techStack: 'Flutter, Dart',
+        href: 'https://github.com/Nikeshchaudhary52494/flutterFoodApp.git',
     },
 ]
