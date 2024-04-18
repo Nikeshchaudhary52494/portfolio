@@ -2,11 +2,13 @@ import React from 'react'
 import Projects from './Projects'
 import { projectCard } from '../utils/data'
 import TechStack from './TechStack'
+import ExtraProjects from './ExtraProjects'
 const MainSection = () => {
     return (
         <>
-            <div>
+            <div className='overflow-hidden'>
                 <Projects title="Projects" data={projectCard} />
+                <ExtraProjects />
                 <TechStack />
             </div>
         </>

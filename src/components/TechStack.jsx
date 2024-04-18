@@ -18,7 +18,8 @@ const TechStack = () => {
                         'Javascript',
                         'Typescript',
                         'React Js',
-                        'Next Js 13',
+                        'Next Js 14',
+                        'Shadcn Ui',
                         'Flutter'
                     ]}
                 />
@@ -28,7 +29,9 @@ const TechStack = () => {
                     tech={[
                         'Node Js',
                         'Express Js',
-                        'Next Auth'
+                        'Next Auth',
+                        'Clerk',
+                        'Firebase'
                     ]}
                 />
                 <TechCard
@@ -37,6 +40,9 @@ const TechStack = () => {
                     tech={[
                         'MySql',
                         'MongoDB',
+                        'postgresql',
+                        'Supabase',
+                        'FireStore'
                     ]}
                 />
                 <TechCard
@@ -54,6 +60,7 @@ const TechStack = () => {
                     title="miscellaneous"
                     classaName="text-[#10c0a2]"
                     tech={[
+                        'prisma',
                         'GIT',
                         'GitHub',
                         'Postman',

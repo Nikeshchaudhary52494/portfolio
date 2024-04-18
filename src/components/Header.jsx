@@ -9,35 +9,35 @@ const Header = () => {
     const handleToggle = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-    useEffect(() => {
-        const handleScroll = (event) => {
-            if (isSidebarOpen) {
-                event.preventDefault();
-            }
-        };
+    // useEffect(() => {
+    // const handleScroll = (event) => {
+    //     if (isSidebarOpen) {
+    //         event.preventDefault();
+    //     }
+    // };
 
-        const handleKeydown = (event) => {
-            if (isSidebarOpen && (event.key === "ArrowUp" || event.key === "ArrowDown")) {
-                event.preventDefault();
-            }
-        };
+    // const handleKeydown = (event) => {
+    //     if (isSidebarOpen && (event.key === "ArrowUp" || event.key === "ArrowDown")) {
+    //         event.preventDefault();
+    //     }
+    // };
 
-        const handleTouchStart = (event) => {
-            if (isSidebarOpen) {
-                event.preventDefault();
-            }
-        };
+    //     const handleTouchStart = (event) => {
+    //         if (isSidebarOpen) {
+    //             event.preventDefault();
+    //         }
+    //     };
 
-        document.body.addEventListener("wheel", handleScroll, { passive: false });
-        document.body.addEventListener("keydown", handleKeydown);
-        document.body.addEventListener("touchstart", handleTouchStart, { passive: false });
+    //     document.body.addEventListener("wheel", handleScroll, { passive: false });
+    //     document.body.addEventListener("keydown", handleKeydown);
+    //     document.body.addEventListener("touchstart", handleTouchStart, { passive: false });
 
-        return () => {
-            document.body.removeEventListener("wheel", handleScroll);
-            document.body.removeEventListener("keydown", handleKeydown);
-            document.body.removeEventListener("touchstart", handleTouchStart);
-        };
-    }, [isSidebarOpen]);
+    //     return () => {
+    //         document.body.removeEventListener("wheel", handleScroll);
+    //         document.body.removeEventListener("keydown", handleKeydown);
+    //         document.body.removeEventListener("touchstart", handleTouchStart);
+    //     };
+    // }, [isSidebarOpen]);
 
 
 
@@ -51,7 +51,7 @@ const Header = () => {
                 </div>
 
                 <div
-                    className={`w-screen md:hidden z-10 h-screen -top-4 absolute -left-11 transition-transform bg-black backdrop-filter bg-opacity-50 backdrop-blur-md transform ${isSidebarOpen ? 'translate-x-11' : '-translate-x-full'}`}>
+                    className={`w-screen md:hidden z-10 h-screen fixed inset-0 -left-11 transition-transform bg-black backdrop-filter bg-opacity-50 backdrop-blur-md transform ${isSidebarOpen ? 'translate-x-11' : '-translate-x-full'}`}>
                     <X
                         onClick={handleToggle}
                         className='absolute top-5 cursor-pointer left-52 text-white' />
